@@ -4,12 +4,12 @@
 #
 Name     : mvn-commons-daemon
 Version  : 1.0.13
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.jar
 Source0  : https://repo1.maven.org/maven2/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.jar
-Source1  : https://repo1.maven.org/maven2/commons-daemon/commons-daemon/1.0.1/commons-daemon-1.0.1.jar
-Source2  : https://repo1.maven.org/maven2/commons-daemon/commons-daemon/1.0.1/commons-daemon-1.0.1.pom
-Source3  : https://repo1.maven.org/maven2/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.pom
+Source1  : https://repo1.maven.org/maven2/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.pom
+Source2  : https://repo1.maven.org/maven2/commons-daemon/commons-daemon/1.1.0/commons-daemon-1.1.0.jar
+Source3  : https://repo1.maven.org/maven2/commons-daemon/commons-daemon/1.1.0/commons-daemon-1.1.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -34,14 +34,14 @@ data components for the mvn-commons-daemon package.
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.0.13
 cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.jar
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.0.1
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.0.1/commons-daemon-1.0.1.jar
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.0.1
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.0.1/commons-daemon-1.0.1.pom
-
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.0.13
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.pom
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.1.0
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.1.0/commons-daemon-1.1.0.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.1.0
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.1.0/commons-daemon-1.1.0.pom
 
 
 %files
@@ -49,7 +49,7 @@ cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/commons-daemon/commons-
 
 %files data
 %defattr(-,root,root,-)
-/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.0.1/commons-daemon-1.0.1.jar
-/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.0.1/commons-daemon-1.0.1.pom
 /usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.jar
 /usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.pom
+/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.1.0/commons-daemon-1.1.0.jar
+/usr/share/java/.m2/repository/commons-daemon/commons-daemon/1.1.0/commons-daemon-1.1.0.pom
